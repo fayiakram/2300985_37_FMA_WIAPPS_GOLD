@@ -1,0 +1,70 @@
+<%- include("../partials/navbar") %>
+    <%- include("../partials/sidenav") %>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">Services</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active">Services</li>
+                    </ol>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            DataTable Services
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Tombol Aksi">
+                            <!-- Tombol Details -->
+                            <button class="btn btn-info">Tambah</button>
+                        </div>
+                        <div class="card-body">
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr>
+                                        <th>Service Name</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>Service Name</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>
+                                            <div class="btn-group" role="group" aria-label="Tombol Aksi">
+                                                <!-- Tombol Details -->
+                                                <button class="btn btn-info">Details</button>
+                                                <!-- Tombol Edit -->
+                                                <button class="btn btn-warning">Edit</button>
+                                                <!-- Tombol Delete -->
+                                                <button class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>
+                                            <div class="btn-group" role="group" aria-label="Tombol Aksi">
+                                                <!-- Tombol Details -->
+                                                <button class="btn btn-info">Details</button>
+                                                <!-- Tombol Edit -->
+                                                <button class="btn btn-warning">Edit</button>
+                                                <!-- Tombol Delete -->
+                                                <button class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <%- include("../partials/footer") %>
